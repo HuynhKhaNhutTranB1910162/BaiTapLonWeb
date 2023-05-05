@@ -11,10 +11,10 @@
       Cập nhật thành công!
     </v-alert>
     <v-row justify="center">
-      <v-col cols="12" sm="10" md="8" lg="6">
+      <v-col >
         <v-card>
           <v-card-title
-            class="justify-content-center pt-5 bg-primary white--text"
+            class="justify-content-center pt-5 primary white--text"
             color="text--darken-2"
           >
             <h3>Cập Nhật Thông Tin</h3>
@@ -70,7 +70,7 @@
             <v-file-input filled label="Chọn file" @change="selectFile">
             </v-file-input>
             <v-img :src="`/${products.image}`" width="120px"></v-img>
-            <v-btn type="submit" class="pink white--text float-right"
+            <v-btn type="submit" class="primary white--text"
               >Cập nhật</v-btn
             >
             <div class="mb-10"></div>

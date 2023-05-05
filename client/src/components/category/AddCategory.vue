@@ -14,8 +14,9 @@
     <v-row justify="center">
       <v-col cols="12" sm="10" md="8" lg="6">
         <v-card>
-          <v-card-title class="subheading font-weight-bold"
-            >Thêm Loại sản phẩm</v-card-title
+          <v-card-title  class="justify-content-center pt-5 primary white--text"
+            color="text--darken-2"
+            >Thêm Loại Sản Phẩm</v-card-title
           >
           <v-form
             ref="form"

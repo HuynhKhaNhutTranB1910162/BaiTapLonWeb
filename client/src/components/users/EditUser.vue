@@ -11,10 +11,10 @@
       Cập nhật thành công!
     </v-alert>
     <v-row justify="center">
-      <v-col cols="12" sm="10" md="8" lg="6">
+      <v-col >
         <v-card>
           <v-card-title
-            class="justify-content-center pt-5 bg-primary white--text"
+            class="justify-content-center pt-5 primary white--text"
             color="text--darken-2"
             ><h3>Cập Nhật Thông Tin</h3>
           </v-card-title>
@@ -32,10 +32,7 @@
               :rules="[rules.required]"
             >
             </v-text-field>
-            <v-radio-group row v-model="users.gender" label="Giới tính">
-              <v-radio label="Nam" value="M"></v-radio>
-              <v-radio label="Nữ" value="F"></v-radio>
-            </v-radio-group>
+            
             <v-text-field
               v-model="users.email"
               filled
@@ -55,7 +52,11 @@
               counter
               @click:append="show1 = !show1"
             ></v-text-field>
-            <v-btn type="submit" class="pink white--text float-right"
+            <v-radio-group row v-model="users.gender" label="Giới tính">
+              <v-radio label="Nam" value="M"></v-radio>
+              <v-radio label="Nữ" value="F"></v-radio>
+            </v-radio-group>
+            <v-btn type="submit" class="primary white--text"
               >Cập nhật</v-btn
             >
             <div class="mb-10"></div>
