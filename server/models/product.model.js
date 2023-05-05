@@ -1,22 +1,3 @@
-// const mongoose = require("mongoose");
-
-// const postSchema = mongoose.Schema({
-//   name: String,
-//   qty: Number,
-//   price: Number,
-//   detail: String,
-//   image: String,
-//   category: {
-//     type: ObjectId,
-//     ref: "Category",
-//   },
-//   created: {
-//     type: Date,
-//     default: Date.now,
-//   },
-// });
-
-// module.exports = mongoose.model("product", postSchema);
 
 const {
   model,

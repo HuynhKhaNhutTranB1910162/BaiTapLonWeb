@@ -33,12 +33,6 @@ app.use("/api/category", require("./routes/category.route"));
 
 app.use("/api/user", require("./routes/user.route"));
 
-// if (process.env.NODE_ENV === "production") {
-//   app.use(express.static(__dirname + "/dist/"));
-//   app.get("*", (res, req) => {
-//     res.sendFile(__dirname + "/dist/index.html");
-//   });
-// }
 // start server
 app.listen(port, () =>
   console.log(`server running at http://localhost:${port}`)
